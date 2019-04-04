@@ -218,9 +218,9 @@ public class Radix{
     obj.radixNSsort(data);
   }
 
-  public void radixNSsort(int[] data){
+  private void radixNSsort(int[] data){
     @SuppressWarnings("unchecked")
-    MyLinkedList<Integer>[] buckets = new MyLinkedList[19];
+    MyLinkedList<Integer>[] buckets = new MyLinkedList[20];
 
     for (int i = 0 ; i < buckets.length ; i++){
       buckets[i] = new MyLinkedList<Integer>();
